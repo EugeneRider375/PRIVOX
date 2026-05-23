@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm -v)",
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Bash(curl -s http://localhost:3010 -L -o /dev/null -w \"%{http_code}\")",
+      "Bash(curl -s http://localhost:3010/ru -o /dev/null -w \"%{http_code}\")",
+      "Bash(curl -s http://localhost:3010/en -o /dev/null -w \"%{http_code}\")",
+      "Bash(npx tsc *)"
+    ]
+  }
+}
