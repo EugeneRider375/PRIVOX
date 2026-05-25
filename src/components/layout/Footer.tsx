@@ -2,6 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { Radio, MapPin, Wifi, Shield } from 'lucide-react';
+import PrivoxBrandIcon from './PrivoxBrandIcon';
 
 export default function Footer() {
   const t = useTranslations('footer');
@@ -20,9 +21,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-2.5 mb-4">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center shadow-[0_0_15px_rgba(6,182,212,0.4)]">
-                <Radio size={16} className="text-white" />
-              </div>
+              <PrivoxBrandIcon className="w-8 h-8 shadow-[0_0_15px_rgba(16,163,111,0.4)]" />
               <span className="text-white font-bold text-xl tracking-[0.15em]">PRIVOX</span>
             </div>
             <p className="text-slate-400 text-sm leading-relaxed max-w-xs mb-6">

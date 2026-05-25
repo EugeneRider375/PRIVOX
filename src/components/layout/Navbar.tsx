@@ -5,6 +5,7 @@ import { useTranslations, useLocale } from 'next-intl';
 import { useRouter, usePathname } from 'next/navigation';
 import { Menu, X, Globe, ChevronDown, Radio, Signal, Monitor, Cpu } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import PrivoxBrandIcon from './PrivoxBrandIcon';
 
 const localeNames: Record<string, string> = { en: 'EN', fr: 'FR', de: 'DE', ru: 'RU' };
 const localeLabels: Record<string, string> = {
@@ -81,9 +82,7 @@ export default function Navbar() {
           {/* Logo */}
           <button onClick={() => scrollTo('hero')} className="flex items-center gap-2.5 group flex-shrink-0">
             <div className="relative">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center shadow-[0_0_15px_rgba(6,182,212,0.5)]">
-                <Radio size={16} className="text-white" />
-              </div>
+              <PrivoxBrandIcon className="w-8 h-8 shadow-[0_0_15px_rgba(16,163,111,0.5)]" />
               <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-cyan-500 to-blue-600 opacity-30 blur-md group-hover:opacity-60 transition-opacity" />
             </div>
             <span className="text-white font-bold text-xl tracking-[0.15em] group-hover:text-cyan-400 transition-colors">
