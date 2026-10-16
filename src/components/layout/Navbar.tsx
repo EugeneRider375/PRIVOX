@@ -3,9 +3,13 @@
 import { useState, useEffect, useRef } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
 import { useRouter, usePathname } from 'next/navigation';
-import { Menu, X, Globe, ChevronDown, Radio, Signal, Monitor, Cpu } from 'lucide-react';
+import { Menu, X, Globe, ChevronDown, Radio, Signal, Monitor, Cpu, ArrowUpRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import PrivoxBrandIcon from './PrivoxBrandIcon';
+
+// Ссылки на живые части системы: демо-лендинг и само приложение.
+const DEMO_URL = 'https://demo.privox.tech';
+const APP_URL = 'https://ptt.privox.tech';
 
 const localeNames: Record<string, string> = { en: 'EN', fr: 'FR', de: 'DE', ru: 'RU' };
 const localeLabels: Record<string, string> = {
@@ -149,10 +153,29 @@ export default function Navbar() {
                 <span className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-cyan-500 to-blue-500 scale-x-0 group-hover:scale-x-100 transition-transform origin-left" />
               </button>
             ))}
+
+            <a
+              href={DEMO_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-2 text-sm text-slate-400 hover:text-white transition-colors relative group"
+            >
+              {t('liveDemo')}
+              <span className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-cyan-500 to-blue-500 scale-x-0 group-hover:scale-x-100 transition-transform origin-left" />
+            </a>
           </div>
 
           {/* Right: Language switcher only */}
           <div className="flex items-center gap-3">
+            <a
+              href={APP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden md:flex items-center gap-1.5 px-3.5 py-1.5 text-sm rounded-lg border border-cyan-500/30 text-cyan-300 hover:bg-cyan-500/10 hover:border-cyan-400/50 transition-colors"
+            >
+              {t('openApp')}
+              <ArrowUpRight size={13} />
+            </a>
             <div ref={langRef} className="relative">
               <button
                 onClick={() => setLangOpen(!langOpen)}
@@ -260,6 +283,24 @@ export default function Navbar() {
                   {link.label}
                 </button>
               ))}
+
+              <a
+                href={DEMO_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-4 py-3 text-sm text-slate-300 hover:text-white hover:bg-white/5 rounded-lg text-left transition-colors"
+              >
+                {t('liveDemo')}
+              </a>
+              <a
+                href={APP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mx-1 mt-1 flex items-center justify-center gap-1.5 px-4 py-3 text-sm rounded-lg border border-cyan-500/30 text-cyan-300 hover:bg-cyan-500/10 transition-colors"
+              >
+                {t('openApp')}
+                <ArrowUpRight size={14} />
+              </a>
 
               {/* Language section in mobile */}
               <div className="mt-2 pt-3 border-t border-white/5">

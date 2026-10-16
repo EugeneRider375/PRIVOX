@@ -66,6 +66,21 @@ export default function Footer() {
                   </button>
                 </li>
               ))}
+              {[
+                { label: t('linksDemo'), href: 'https://demo.privox.tech' },
+                { label: t('linksApp'), href: 'https://ptt.privox.tech' },
+              ].map((link) => (
+                <li key={link.href}>
+                  <a
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-slate-400 hover:text-cyan-400 transition-colors"
+                  >
+                    {link.label}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
 

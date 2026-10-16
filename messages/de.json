@@ -9,7 +9,9 @@
     "pilots": "Projekte",
     "technology": "Technologien",
     "contact": "Kontakt",
-    "requestDemo": "Demo anfragen"
+    "requestDemo": "Demo anfragen",
+    "liveDemo": "Live-Demo",
+    "openApp": "App öffnen"
   },
   "hero": {
     "badge": "Operative Plattform",
@@ -236,6 +238,8 @@
     "linksContact": "Kontakt",
     "linksPrivacy": "Datenschutzrichtlinie",
     "copyright": "© 2025 PRIVOX. Alle Rechte vorbehalten.",
-    "tagline": "Plattform für operative Intelligenz"
+    "tagline": "Plattform für operative Intelligenz",
+    "linksDemo": "Live-Demo",
+    "linksApp": "App öffnen"
   }
 }

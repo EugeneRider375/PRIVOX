@@ -9,7 +9,9 @@
     "pilots": "Projects",
     "technology": "Technology",
     "contact": "Contact",
-    "requestDemo": "Request Demo"
+    "requestDemo": "Request Demo",
+    "liveDemo": "Live demo",
+    "openApp": "Open app"
   },
   "hero": {
     "badge": "Operational Platform",
@@ -236,6 +238,8 @@
     "linksContact": "Contact",
     "linksPrivacy": "Privacy Policy",
     "copyright": "© 2025 PRIVOX. All rights reserved.",
-    "tagline": "Operational Intelligence Platform"
+    "tagline": "Operational Intelligence Platform",
+    "linksDemo": "Live demo",
+    "linksApp": "Open the app"
   }
 }

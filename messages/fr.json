@@ -9,7 +9,9 @@
     "pilots": "Projets",
     "technology": "Technologies",
     "contact": "Contact",
-    "requestDemo": "Demander une démo"
+    "requestDemo": "Demander une démo",
+    "liveDemo": "Démo en ligne",
+    "openApp": "Ouvrir l'app"
   },
   "hero": {
     "badge": "Plateforme Opérationnelle",
@@ -236,6 +238,8 @@
     "linksContact": "Contact",
     "linksPrivacy": "Politique de confidentialité",
     "copyright": "© 2025 PRIVOX. Tous droits réservés.",
-    "tagline": "Plateforme d'intelligence opérationnelle"
+    "tagline": "Plateforme d'intelligence opérationnelle",
+    "linksDemo": "Démo en ligne",
+    "linksApp": "Ouvrir l'application"
   }
 }
